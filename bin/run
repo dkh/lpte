@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'require_all'
+require 'pry'
+
+require_rel './../lib'
+
+driver = DriverRegistrator.call
+
+Senario.new(driver).run

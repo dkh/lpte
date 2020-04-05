@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'pry'
+require 'require_all'
+require 'dotenv/load'
+
+require_rel './../lib'
+
+Pry.start
