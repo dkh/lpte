@@ -1,11 +1,10 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
-require 'require_all'
-require 'pry'
+require 'dotenv/load'
 
-require_rel './../lib'
+require_relative './../lib/lpte'
 
-driver = DriverRegistrator.call
+driver = Lpte::DriverRegistrator.call
 
-Senario.new(driver).run
+Lpte::Senario.new(driver).run
