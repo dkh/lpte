@@ -2,9 +2,10 @@
 
 require 'bundler/setup'
 require 'dotenv/load'
+require 'pry'
 
 require_relative './../lib/lpte'
 
 driver = Lpte::DriverRegistrator.call
 
-Lpte::Senario.new(driver).run
+Lpte::Senario.call(driver, context: ARGV.first)

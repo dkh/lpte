@@ -1,43 +1,25 @@
 # frozen_string_literal: true
 
 module Lpte
-  class Senario < SimpleDelegator
-    include Capybara::DSL
+  class Senario < Base
+    CONTEXT_CLASSES = {
+      MY_SUBJECTS = 'my_subjects' => Contexts::MySubjects,
+      REGULAR = 'regular' => Contexts::Regular
+    }.freeze
 
-    def run
-      data['students'].each do |student|
-        login(student)
+    def initialize(driver, context: REGULAR)
+      @driver = driver
+      @context = context || REGULAR
+    end
 
-        data['subject_urls'].each { |url| visit url }
-
-        logout
-      end
+    def call
+      CONTEXT_CLASSES.fetch(context) { Contexts::Regular }.new(driver).run
     end
 
     private
 
-    def login(student)
-      visit data['login_url']
+    private_constant :CONTEXT_CLASSES, :MY_SUBJECTS, :REGULAR
 
-      fill_in 'Username', with: student['login']
-      fill_in 'Password', with: student['password']
-
-      click_on 'Log in'
-    end
-
-    def logout
-      find('.textmenu').click
-
-      within('ul.menu') do
-        logout_link = find('a[data-title="logout,moodle"]')[:href]
-
-        visit logout_link
-      end
-    end
-
-
-    def data
-      @data ||= DataLoader.call('config/secrets.yml')
-    end
+    attr_reader :driver, :context
   end
 end
