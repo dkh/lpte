@@ -9,6 +9,12 @@ describe Lpte::DriverRegistrator do
       ]
     end
 
+    before do
+      Capybara.default_max_wait_time = 200
+      Capybara.run_server = true
+      Capybara.current_driver = :firefox
+    end
+
     subject(:registrator) { described_class.call }
 
     it 'configures capybara' do
