@@ -7,6 +7,8 @@ module Lpte
 
       def run
         data['students'].each do |student|
+          next unless student['login']
+
           login(student)
 
           visit_subjects
