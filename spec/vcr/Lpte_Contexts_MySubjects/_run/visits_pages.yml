@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session
+    uri: http://127.0.0.1:9520/session
     body:
       encoding: UTF-8
       string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--headless","--no-sandbox","--disable-gpu","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--headless","--no-sandbox","--disable-gpu","--disable-dev-shm-usage"]}}]}}'
@@ -31,14 +31,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"80.0.3987.163","chrome":{"chromedriverVersion":"80.0.3987.16
-        (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})","userDataDir":"/var/folders/18/4f4vly8n4zj0561d_wjms0b40000gn/T/.com.google.Chrome.8f6BNZ"},"goog:chromeOptions":{"debuggerAddress":"localhost:52341"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185})","userDataDir":"/var/folders/18/4f4vly8n4zj0561d_wjms0b40000gn/T/.com.google.Chrome.BRyHqf"},"goog:chromeOptions":{"debuggerAddress":"localhost:63682"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify"},"sessionId":"2b6c33417305f60ac17741921d7d6f20"}}'
+        and notify"},"sessionId":"d3526d81fa0ad7974a4467fba6ff15d7"}}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:18 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:53 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<LOGIN_URL>"}'
@@ -68,10 +68,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"xpath","value":"./descendant::*[self::input | self::textarea][not(((((((./@type
@@ -107,12 +107,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"a1543b7d-0aa7-434b-9bc2-8df1d4512fc0"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"eb8c7fd6-f164-4980-b443-dcd3a38032b3"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -159,7 +159,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a1543b7d-0aa7-434b-9bc2-8df1d4512fc0"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"eb8c7fd6-f164-4980-b443-dcd3a38032b3"}]}'
     headers:
       Accept:
       - application/json
@@ -186,14 +186,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return arguments[0].matches('':disabled, select:disabled
-        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"a1543b7d-0aa7-434b-9bc2-8df1d4512fc0"}]}'
+        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"eb8c7fd6-f164-4980-b443-dcd3a38032b3"}]}'
     headers:
       Accept:
       - application/json
@@ -220,14 +220,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":false}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return (function(el, names){\n  return names.map(function(name){\n    return
-        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"a1543b7d-0aa7-434b-9bc2-8df1d4512fc0"},["tagName","type"]]}'
+        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"eb8c7fd6-f164-4980-b443-dcd3a38032b3"},["tagName","type"]]}'
     headers:
       Accept:
       - application/json
@@ -254,13 +254,13 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":["INPUT","text"]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
-      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"a1543b7d-0aa7-434b-9bc2-8df1d4512fc0"}]}'
+      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"eb8c7fd6-f164-4980-b443-dcd3a38032b3"}]}'
     headers:
       Accept:
       - application/json
@@ -287,10 +287,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/a1543b7d-0aa7-434b-9bc2-8df1d4512fc0/value
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/eb8c7fd6-f164-4980-b443-dcd3a38032b3/value
     body:
       encoding: UTF-8
       string: '{"value":<LOGIN_IN_RESPONSE_BODY>,"text":"<LOGIN>"}'
@@ -320,10 +320,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"xpath","value":"./descendant::*[self::input | self::textarea][not(((((((./@type
@@ -359,12 +359,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"33536cc3-b7ac-4dc5-8ec4-d655289c9226"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"e4708b5c-836e-43b6-bcb5-36e7c295f25c"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -411,7 +411,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"33536cc3-b7ac-4dc5-8ec4-d655289c9226"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e4708b5c-836e-43b6-bcb5-36e7c295f25c"}]}'
     headers:
       Accept:
       - application/json
@@ -438,14 +438,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return arguments[0].matches('':disabled, select:disabled
-        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"33536cc3-b7ac-4dc5-8ec4-d655289c9226"}]}'
+        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"e4708b5c-836e-43b6-bcb5-36e7c295f25c"}]}'
     headers:
       Accept:
       - application/json
@@ -472,14 +472,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":false}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return (function(el, names){\n  return names.map(function(name){\n    return
-        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"33536cc3-b7ac-4dc5-8ec4-d655289c9226"},["tagName","type"]]}'
+        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"e4708b5c-836e-43b6-bcb5-36e7c295f25c"},["tagName","type"]]}'
     headers:
       Accept:
       - application/json
@@ -506,13 +506,13 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":["INPUT","password"]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
-      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"33536cc3-b7ac-4dc5-8ec4-d655289c9226"}]}'
+      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"e4708b5c-836e-43b6-bcb5-36e7c295f25c"}]}'
     headers:
       Accept:
       - application/json
@@ -539,10 +539,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/33536cc3-b7ac-4dc5-8ec4-d655289c9226/value
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/e4708b5c-836e-43b6-bcb5-36e7c295f25c/value
     body:
       encoding: UTF-8
       string: '{"value":<PASSWORD_IN_RESPONSE_BODY>,"text":"<PASSWORD>"}'
@@ -572,10 +572,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Log in'') or
@@ -612,12 +612,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"0d940308-f0cc-412a-baca-c9366b0fd111"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"86cd2642-e065-4c4b-ad73-2c792259f2ff"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -664,7 +664,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"0d940308-f0cc-412a-baca-c9366b0fd111"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"86cd2642-e065-4c4b-ad73-2c792259f2ff"}]}'
     headers:
       Accept:
       - application/json
@@ -691,14 +691,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return arguments[0].matches('':disabled, select:disabled
-        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"0d940308-f0cc-412a-baca-c9366b0fd111"}]}'
+        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"86cd2642-e065-4c4b-ad73-2c792259f2ff"}]}'
     headers:
       Accept:
       - application/json
@@ -725,10 +725,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":false}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:19 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/0d940308-f0cc-412a-baca-c9366b0fd111/click
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/86cd2642-e065-4c4b-ad73-2c792259f2ff/click
     body:
       encoding: UTF-8
       string: "{}"
@@ -758,10 +758,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:21 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:57 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<SUBJECT_URL_1>"}'
@@ -791,10 +791,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:57 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<SUBJECT_URL_2>"}'
@@ -824,10 +824,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":".textmenu"}'
@@ -855,12 +855,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"e326617a-29dc-4456-932c-0e77c4773a13"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"7279bbb9-9d89-42f6-aea4-71db2fcf09d3"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -907,7 +907,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"e326617a-29dc-4456-932c-0e77c4773a13"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"7279bbb9-9d89-42f6-aea4-71db2fcf09d3"}]}'
     headers:
       Accept:
       - application/json
@@ -934,10 +934,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/e326617a-29dc-4456-932c-0e77c4773a13/click
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/7279bbb9-9d89-42f6-aea4-71db2fcf09d3/click
     body:
       encoding: UTF-8
       string: "{}"
@@ -967,10 +967,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"ul.menu"}'
@@ -998,12 +998,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"fcea6f75-b815-4474-9a7a-e57536f1c39b"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"c2a1aaaa-d5fe-4bc2-ad7e-1adcb5a26d37"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -1050,7 +1050,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"fcea6f75-b815-4474-9a7a-e57536f1c39b"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c2a1aaaa-d5fe-4bc2-ad7e-1adcb5a26d37"}]}'
     headers:
       Accept:
       - application/json
@@ -1077,10 +1077,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/fcea6f75-b815-4474-9a7a-e57536f1c39b/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/c2a1aaaa-d5fe-4bc2-ad7e-1adcb5a26d37/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"a[data-title=\"logout,moodle\"]"}'
@@ -1108,12 +1108,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"65e51596-db4d-48ae-823d-c7b969050a17"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"844ae58f-212e-431f-9c74-c880fcfa9090"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -1160,7 +1160,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65e51596-db4d-48ae-823d-c7b969050a17"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"844ae58f-212e-431f-9c74-c880fcfa9090"}]}'
     headers:
       Accept:
       - application/json
@@ -1187,10 +1187,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function u(e){var t=e.tagName.toUpperCase();if(\"OPTION\"==t)return!0;if(\"INPUT\"!=t)return!1;var
@@ -1202,7 +1202,7 @@ http_interactions:
         r&&(r=r.cssText),r;if((\"selected\"==a||\"checked\"==a)&&u(e))return s(e)?\"true\":null;if(tagName=e.tagName.toUpperCase(),\"IMG\"==tagName&&\"src\"==a||\"A\"==tagName&&\"href\"==a)return(r=c(e,a))&&(r=e[a]),r;if(\"spellcheck\"==a){if(null!==(r=c(e,a))){if(\"false\"==r.toLowerCase())return\"false\";if(\"true\"==r.toLowerCase())return\"true\"}return
         e[a]+\"\"}var l,n=d[t]||t;if(i.some(function(e){e==a}))return(r=!(null===(r=c(e,a)))||e[n])?\"true\":null;try{l=e[n]}catch(o){}return
         null!=(r=null==l||\"object\"==typeof l||\"function\"==typeof l?c(e,t):l)?r.toString():null}})()).apply(null,
-        arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"65e51596-db4d-48ae-823d-c7b969050a17"},"href"]}'
+        arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"844ae58f-212e-431f-9c74-c880fcfa9090"},"href"]}'
     headers:
       Accept:
       - application/json
@@ -1229,10 +1229,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"<MY_SUBJECTS_CONTEXT_TEST_LOGOUT_URL>"}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:58 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<MY_SUBJECTS_CONTEXT_TEST_LOGOUT_URL>"}'
@@ -1262,5 +1262,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:23 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 recorded_with: VCR 5.1.0

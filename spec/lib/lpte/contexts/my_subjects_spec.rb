@@ -14,6 +14,7 @@ describe Lpte::Contexts::MySubjects, :vcr do
     end
 
     let(:subject_urls) { [ENV['SUBJECT_URL_1'], ENV['SUBJECT_URL_2']] }
+    let(:interactions) { VCR.current_cassette.http_interactions.instance_variable_get('@used_interactions') }
 
     before do
       allow_any_instance_of(described_class).to receive(:data) { data }
@@ -25,6 +26,12 @@ describe Lpte::Contexts::MySubjects, :vcr do
     subject(:context) { -> { described_class.new(driver).run } }
 
     it 'visits pages' do
+      expect(request_by_link(ENV['SUBJECT_URL_1'])).to be_instance_of(VCR::HTTPInteraction)
+      expect(request_by_link(ENV['SUBJECT_URL_2'])).to be_instance_of(VCR::HTTPInteraction)
+    end
+
+    def request_by_link(link)
+      interactions.detect { |interaction| interaction.request.body.include?(link) }
     end
   end
 end

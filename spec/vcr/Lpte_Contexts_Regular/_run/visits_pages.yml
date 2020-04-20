@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<LOGIN_URL>"}'
@@ -32,10 +32,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"xpath","value":"./descendant::*[self::input | self::textarea][not(((((((./@type
@@ -71,12 +71,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"cb1a3fc0-0b6d-496d-aff6-53cfaffe4186"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"4480298b-0b2d-4321-beb9-0676dacf064e"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -123,7 +123,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cb1a3fc0-0b6d-496d-aff6-53cfaffe4186"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"4480298b-0b2d-4321-beb9-0676dacf064e"}]}'
     headers:
       Accept:
       - application/json
@@ -150,14 +150,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return arguments[0].matches('':disabled, select:disabled
-        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"cb1a3fc0-0b6d-496d-aff6-53cfaffe4186"}]}'
+        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"4480298b-0b2d-4321-beb9-0676dacf064e"}]}'
     headers:
       Accept:
       - application/json
@@ -184,14 +184,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":false}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return (function(el, names){\n  return names.map(function(name){\n    return
-        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"cb1a3fc0-0b6d-496d-aff6-53cfaffe4186"},["tagName","type"]]}'
+        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"4480298b-0b2d-4321-beb9-0676dacf064e"},["tagName","type"]]}'
     headers:
       Accept:
       - application/json
@@ -218,13 +218,13 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":["INPUT","text"]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
-      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"cb1a3fc0-0b6d-496d-aff6-53cfaffe4186"}]}'
+      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"4480298b-0b2d-4321-beb9-0676dacf064e"}]}'
     headers:
       Accept:
       - application/json
@@ -251,10 +251,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/cb1a3fc0-0b6d-496d-aff6-53cfaffe4186/value
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/4480298b-0b2d-4321-beb9-0676dacf064e/value
     body:
       encoding: UTF-8
       string: '{"value":<LOGIN_IN_RESPONSE_BODY>,"text":"<LOGIN>"}'
@@ -284,10 +284,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"xpath","value":"./descendant::*[self::input | self::textarea][not(((((((./@type
@@ -323,12 +323,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"1ebd2c32-82eb-427d-950c-7d2a5b10f421"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"ac1a066c-89f5-43c8-b2f2-747f22c19915"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -375,7 +375,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ebd2c32-82eb-427d-950c-7d2a5b10f421"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ac1a066c-89f5-43c8-b2f2-747f22c19915"}]}'
     headers:
       Accept:
       - application/json
@@ -402,14 +402,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return arguments[0].matches('':disabled, select:disabled
-        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ebd2c32-82eb-427d-950c-7d2a5b10f421"}]}'
+        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"ac1a066c-89f5-43c8-b2f2-747f22c19915"}]}'
     headers:
       Accept:
       - application/json
@@ -436,14 +436,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":false}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return (function(el, names){\n  return names.map(function(name){\n    return
-        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ebd2c32-82eb-427d-950c-7d2a5b10f421"},["tagName","type"]]}'
+        el[name]\n  });\n})(arguments[0], arguments[1]);\n","args":[{"element-6066-11e4-a52e-4f735466cecf":"ac1a066c-89f5-43c8-b2f2-747f22c19915"},["tagName","type"]]}'
     headers:
       Accept:
       - application/json
@@ -470,13 +470,13 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":["INPUT","password"]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
-      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"1ebd2c32-82eb-427d-950c-7d2a5b10f421"}]}'
+      string: '{"script":"arguments[0].select()","args":[{"element-6066-11e4-a52e-4f735466cecf":"ac1a066c-89f5-43c8-b2f2-747f22c19915"}]}'
     headers:
       Accept:
       - application/json
@@ -503,10 +503,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/1ebd2c32-82eb-427d-950c-7d2a5b10f421/value
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/ac1a066c-89f5-43c8-b2f2-747f22c19915/value
     body:
       encoding: UTF-8
       string: '{"value":<PASSWORD_IN_RESPONSE_BODY>,"text":"<PASSWORD>"}'
@@ -536,10 +536,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"xpath","value":".//a[./@href][((((./@id = ''Log in'') or
@@ -576,12 +576,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"145dda35-04fe-4919-9134-16e619432f96"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"16aac773-2504-4198-a237-71eef464e5a4"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -628,7 +628,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"145dda35-04fe-4919-9134-16e619432f96"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"16aac773-2504-4198-a237-71eef464e5a4"}]}'
     headers:
       Accept:
       - application/json
@@ -655,14 +655,14 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return arguments[0].matches('':disabled, select:disabled
-        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"145dda35-04fe-4919-9134-16e619432f96"}]}'
+        *'')","args":[{"element-6066-11e4-a52e-4f735466cecf":"16aac773-2504-4198-a237-71eef464e5a4"}]}'
     headers:
       Accept:
       - application/json
@@ -689,10 +689,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":false}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:24 GMT
+  recorded_at: Mon, 20 Apr 2020 19:57:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/145dda35-04fe-4919-9134-16e619432f96/click
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/16aac773-2504-4198-a237-71eef464e5a4/click
     body:
       encoding: UTF-8
       string: "{}"
@@ -722,10 +722,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:25 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:01 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<SUBJECT_URL_1>"}'
@@ -755,10 +755,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:26 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<SUBJECT_URL_2>"}'
@@ -788,10 +788,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:26 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":".textmenu"}'
@@ -819,12 +819,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"ba74b496-7765-43d8-b08b-d29ea914113c"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"f6e2e022-0e27-4273-a84f-aef407d71058"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:26 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -871,7 +871,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ba74b496-7765-43d8-b08b-d29ea914113c"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f6e2e022-0e27-4273-a84f-aef407d71058"}]}'
     headers:
       Accept:
       - application/json
@@ -898,10 +898,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/ba74b496-7765-43d8-b08b-d29ea914113c/click
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/f6e2e022-0e27-4273-a84f-aef407d71058/click
     body:
       encoding: UTF-8
       string: "{}"
@@ -931,10 +931,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"ul.menu"}'
@@ -962,12 +962,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"3a153156-d763-4219-acfd-9f9db346f90c"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"8012159c-5d17-4a22-97dc-09c714c27a67"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -1014,7 +1014,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"3a153156-d763-4219-acfd-9f9db346f90c"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8012159c-5d17-4a22-97dc-09c714c27a67"}]}'
     headers:
       Accept:
       - application/json
@@ -1041,10 +1041,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/element/3a153156-d763-4219-acfd-9f9db346f90c/elements
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/element/8012159c-5d17-4a22-97dc-09c714c27a67/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"a[data-title=\"logout,moodle\"]"}'
@@ -1072,12 +1072,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"80618ecd-a6bc-4e05-abca-1a4b96a1091b"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"d9a48e71-0748-46b6-8f6c-0eb2f0ded4d6"}]}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function d(t,e,n){function r(t){var
@@ -1124,7 +1124,7 @@ http_interactions:
         e}var T={NONE:\"none\",HIDDEN:\"hidden\",SCROLL:\"scroll\"};return function
         i(t,e){function n(t){if(\"none\"==window.getComputedStyle(t).display)return!1;var
         e=r(t);if(\"function\"==typeof ShadowRoot&&e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&&e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&&e.tagName&&\"DETAILS\"==e.tagName.toUpperCase()&&!e.open&&\"SUMMARY\"!=t.tagName)&&(e&&n(e))}return
-        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"80618ecd-a6bc-4e05-abca-1a4b96a1091b"}]}'
+        d(t,!!e,n)}})()).apply(null, arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d9a48e71-0748-46b6-8f6c-0eb2f0ded4d6"}]}'
     headers:
       Accept:
       - application/json
@@ -1151,10 +1151,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":true}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/execute/sync
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/execute/sync
     body:
       encoding: UTF-8
       string: '{"script":"return ((function(){function u(e){var t=e.tagName.toUpperCase();if(\"OPTION\"==t)return!0;if(\"INPUT\"!=t)return!1;var
@@ -1166,7 +1166,7 @@ http_interactions:
         r&&(r=r.cssText),r;if((\"selected\"==a||\"checked\"==a)&&u(e))return s(e)?\"true\":null;if(tagName=e.tagName.toUpperCase(),\"IMG\"==tagName&&\"src\"==a||\"A\"==tagName&&\"href\"==a)return(r=c(e,a))&&(r=e[a]),r;if(\"spellcheck\"==a){if(null!==(r=c(e,a))){if(\"false\"==r.toLowerCase())return\"false\";if(\"true\"==r.toLowerCase())return\"true\"}return
         e[a]+\"\"}var l,n=d[t]||t;if(i.some(function(e){e==a}))return(r=!(null===(r=c(e,a)))||e[n])?\"true\":null;try{l=e[n]}catch(o){}return
         null!=(r=null==l||\"object\"==typeof l||\"function\"==typeof l?c(e,t):l)?r.toString():null}})()).apply(null,
-        arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"80618ecd-a6bc-4e05-abca-1a4b96a1091b"},"href"]}'
+        arguments)","args":[{"element-6066-11e4-a52e-4f735466cecf":"d9a48e71-0748-46b6-8f6c-0eb2f0ded4d6"},"href"]}'
     headers:
       Accept:
       - application/json
@@ -1193,10 +1193,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"<REGULAR_CONTEXT_TEST_LOGOUT_URL>"}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:02 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9515/session/2b6c33417305f60ac17741921d7d6f20/url
+    uri: http://127.0.0.1:9520/session/d3526d81fa0ad7974a4467fba6ff15d7/url
     body:
       encoding: UTF-8
       string: '{"url":"<REGULAR_CONTEXT_TEST_LOGOUT_URL>"}'
@@ -1226,5 +1226,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: null
-  recorded_at: Sun, 19 Apr 2020 12:46:27 GMT
+  recorded_at: Mon, 20 Apr 2020 19:58:03 GMT
 recorded_with: VCR 5.1.0
