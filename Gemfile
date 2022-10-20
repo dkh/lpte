@@ -7,7 +7,7 @@ ruby '2.7.0'
 
 gem 'pry', '~> 0.13.0'
 gem 'dotenv', '~> 2.7.2'
-gem 'nokogiri', '~> 1.10.9'
+gem 'nokogiri', '~> 1.13.9'
 gem 'selenium-webdriver', '~> 3.142.7'
 gem 'capybara', '~> 3.32.0'
 gem 'bundler', '~> 2.1.2'
